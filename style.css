@@ -178,6 +178,7 @@ form.sign-up-form {
 }
 
 .panel {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -336,7 +337,7 @@ form.sign-up-form {
         font-size: 0.7rem;
     }
     
-    .container:before {
+    .container::before {
         width: 1500px;
         height: 1500px;
         transform: translateX(-50%);
@@ -347,7 +348,7 @@ form.sign-up-form {
         transition: 2s ease-in-out;
     }
     
-    .container.sign-up-mode:before {
+    .container.sign-up-mode::before {
         transform: translate(-50%, 100%);
         bottom: 32%;
         right: initial;
@@ -371,5 +372,28 @@ form.sign-up-form {
     .container.sign-up-mode .signIn-signUp {
         top: 5%;
         transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 570px) {
+    form {
+        padding: 0 1.5rem;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .panel .content {
+        padding: .5rem 1rem;
+    }
+
+    .container::before {
+        bottom: 72%;
+        left: 50%;
+    }
+    .container.sign-up-mode::before{
+        bottom: 28%;
+        left: 50%;
     }
 }
