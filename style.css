@@ -1,0 +1,22 @@
+/* **************** font family **************** */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* **************** base **************** */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body, 
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
